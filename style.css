@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  background-color: #100a449d;
+  color: #ffffff;
+  padding: 5%;
+}
+
+.block-1 {
+  background-color: #2b0331;
+}
+
+.block-2 {
+  background-color: #07723c;
+}
+
+.block-3 {
+  background-color: #924608;
+}
+
+.full-page {
+  height: 100vh;
+}
+
+.carousel-placeholder {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(143, 142, 142);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.c-placeholder-1 {
+  background-color: rgb(202, 15, 202);
+}
+
+.c-placeholder-2 {
+  background-color: rgb(15, 202, 31);
+}
+
+.c-placeholder-3 {
+  background-color: rgb(15, 196, 202);
+}
+
+/**
+@MEDIA Q
+*/
+
+@media screen and (min-width: 700px){
+  .block-2{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* enabling the block content order reordering */
+  .first-order{
+    text-align: center;
+    order: 1;
+  }
+
+  .second-order{
+    text-align: end;
+    order: 2;
+  }
+}
