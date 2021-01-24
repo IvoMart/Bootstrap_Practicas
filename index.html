@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Prices</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <header>
+      <!-- Shodow background -->
+      <div class="overlay">
+        <img
+          src="https://thumbs.dreamstime.com/b/emparede-el-concepto-del-andidea-de-los-fondos-color-azul-y-verde-cemento-128954617.jpg"
+          alt="Imagen de fondo">
+      </div>
+      <!-- <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2015/02/85655-fondos-android.jpg?itok=8pp_3-a5" alt="Imagen de fondo"> -->
+      <div class="container">
+        <div class="d-flex h-100 align-items-center text-center">
+          <div class="w-100">
+            <h1 class="display-3">Promote product 1</h1>
+            <p class="lead mb-0">
+              Descritions. Extends promoted product.
+            </p>
+            <p><a href="#checkout" class="btn btn-primary my-5 px-4 py-2">Subscribe</a></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="principal">
+      <!-- TITLE -->
+      <div class="pricing-header text-center">
+        <h2 class="display-4">Precios</h2>
+      </div>
+      <!-- CONTENT -->
+      <div class="container text-dark">
+        <div class="card-deck my-4 mx-1 px-1 text-center">
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <h3>Ventas</h3>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title pricing-card-title">$49.99 <small class="text-muted">Regulary $499.99</small></h3>
+              <ul class="list-unstyled">
+                <li>Acceso Ilimitado</li>
+                <li>Certificado de Finalización</li>
+              </ul>
+              <button class="btn btn-sm btn-success">Learn More!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CHECKOUT -->
+      <div id="cheackout">
+        <div class="header text-center">
+          <h2 class="display-4">Checkout</h2>
+        </div>
+        <div class="row px-4 py-4 mx-4">
+          <!-- 1st Column Order Nº2-->
+          <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex align-items-center justify-content-between mb-3">
+              <span class="text-muted">Carrito</span>
+              <span class="badge bg-gradient rounded-pill">1</span>
+            </h4>
+
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <h4 class="text-success">Promo Code <small><em>sale</em></small></h4>
+                <span class="text-success">-$199.99</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between text-dark">
+                <span>Total (USD)</span>
+                <strong>$499.99</strong>
+              </li>
+            </ul>
+
+            <form action="" class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="PromoCode">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-secondary">Redeeme</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- 2nd Column Oreder Nº1-->
+          <div class="col-md-8 order-md-1">
+            <h4 class="mb-3 py-3">Billing address</h4>
+            <form action="">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" id="firstname" required>
+                  <label for="firstname">First Name</label>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" id="lastname" required>
+                  <label for="lastname">Last Name</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="address">
+                <label for="address">Address</label>
+              </div>
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label for="country">Country</label>
+                  <select class="custom-select form-select d-block w-100" name="country" id="country">
+                    <option selected>Select your Country</option>
+                    <option value="Arg">Argentina</option>
+                    <option value="Chi">Chile</option>
+                  </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="state">State</label>
+                  <select class="custom-select form-select d-block w-100" name="state" id="state">
+                    <option selected>Select one State</option>
+                    <option value="City1">City1</option>
+                    <option value="City2">City2</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="zipcode">Zip Code</label>
+                  <input type="text" class="form-control" id="zipcode">
+                </div>
+                <div class="custom-control checkbox">
+                  <input type="checkbox" class="custom-control-input" id="send_addr">
+                  <label for="send_addr" class="custom-control-label">Shipping address is the same as Billing
+                    address.</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" name="saving" id="saving">
+                  <label for="saving" class="custom-control-label">Save my address.</label>
+                </div>
+                <h4 class="py-5">Payment:</h4>
+                <div class="d-block mb-3">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="creditcard" name="paymethod" class="custom-control-input" checked>
+                    <label for="creditcard" class="custom-control-label">Credit Card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="debitcard" name="paymethod" class="custom-control-input">
+                    <label for="debitcard" class="custom-control-label">Debit Card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="paypal" name="paymethod" class="custom-control-input">
+                    <label for="paypal" class="custom-control-label">PayPal</label>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD INFO -->
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" id="cardholder" class="form-control">
+                  <label for="cardholder">Cardholder name</label>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" name="cardnumber" id="cardnum" class="form-control">
+                  <label for="cardnum">Card Number</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <input type="text" placeholder="MM/AA" name="dae-exp" id="exp-date" class="form-control">
+                  <label for="exp-date">Expire Date</label>
+                </div>
+                <div class="col-md-3 mb-b">
+                  <input type="text" placeholder="***" name="securitycode" id="securitycode" class="form-control">
+                  <label for="securitycode">Security Code</label>
+                </div>
+              </div>
+
+              <!-- SUBMIT -->
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-outline-primary btn-lg px-5 btn-" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
